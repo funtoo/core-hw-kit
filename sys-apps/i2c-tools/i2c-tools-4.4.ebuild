@@ -9,7 +9,7 @@ inherit distutils-r1 flag-o-matic toolchain-funcs
 
 DESCRIPTION="I2C tools for bus probing, chip dumping, EEPROM decoding, and more"
 HOMEPAGE="https://www.kernel.org/pub/software/utils/i2c-tools"
-SRC_URI="https://mirrors.edge.kernel.org/pub/software/utils/i2c-tools/i2c-tools-4.3.tar.xz -> i2c-tools-4.3.tar.xz
+SRC_URI="https://mirrors.edge.kernel.org/pub/software/utils/i2c-tools/i2c-tools-4.4.tar.xz -> i2c-tools-4.4.tar.xz
 "
 
 LICENSE="GPL-2"
