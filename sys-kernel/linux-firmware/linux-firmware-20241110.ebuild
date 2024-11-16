@@ -1,3 +1,4 @@
+
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -5,7 +6,8 @@ inherit ego
 
 DESCRIPTION="Linux firmware files"
 HOMEPAGE="https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git"
-SRC_URI="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-20241110.tar.gz -> linux-firmware-20241110.tar.gz"
+SRC_URI="https://mirrors.edge.kernel.org/pub/linux/kernel/firmware/linux-firmware-20241110.tar.gz -> linux-firmware-20241110.tar.gz
+"
 
 LICENSE="GPL-2 GPL-2+ GPL-3 BSD MIT MPL-1.1 linux-fw-redistributable BSD-2 BSD-4 ISC no-source-code"
 SLOT="0"
@@ -16,6 +18,9 @@ QA_PREBUILT="*"
 
 BDEPEND="initramfs? ( app-arch/cpio ) app-misc/rdfind"
 RDEPEND="initramfs? ( !<=app-admin/ego-2.8.5 )"
+PATCHES=(
+	"${FILESDIR}"/${PN}-copy-firmware.patch
+)
 
 src_prepare() {
 	default
