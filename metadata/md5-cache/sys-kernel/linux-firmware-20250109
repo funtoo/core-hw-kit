@@ -11,4 +11,4 @@ RESTRICT=strip test
 SLOT=0
 SRC_URI=https://mirrors.edge.kernel.org/pub/linux/kernel/firmware/linux-firmware-20250109.tar.gz -> linux-firmware-20250109.tar.gz
 _eclasses_=ego	770e172d5c3e0d501d27925a01b44cbc	mount-boot	6aaf58c4a4a0f44626a2bf5483de6e7e
-_md5_=f5293b305cdb414faed3875d7b2beb8f
+_md5_=c12a06d19855531ac58a1b037ddee1d7
